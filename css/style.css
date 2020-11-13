@@ -1,0 +1,829 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --site-widht: 1920px;
+    --orange: #FF9900;
+    --gray: #333333;
+    --white: #FFFFFF;
+    --black: #000000;
+    --light-gray: #CACACA;
+}
+
+h1, h2, h3 {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+    color: var(--gray);
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+html {
+    font-family: 'montserrat';
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.body-container {
+    max-width: 100%;
+}
+
+body {
+    z-index: -1;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 75px;
+}
+
+.header__container {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    background-color: var(--white);
+    box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    margin-left: 75px;
+}
+
+.header__left {
+    display: flex;
+    margin-left: auto;
+
+}
+
+.nav__item {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.nav__list {
+    display: flex;
+    margin-right: 71px;
+    min-width: 709px;
+    justify-content: space-between;
+}
+
+.header__search {
+    background-image: url(/img/Search.svg);
+    width: 25px;
+    height: 25px;
+    margin-right: 86px;
+    background-color: transparent;
+    border: none;
+}
+
+.slider {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-image: url(/img/slide/low-angle-photo-of-balconies.jpg);
+    background-size: cover;
+    min-height: 620px;
+}
+
+.slider-container {
+    margin: 103px 78px 91px 78px;
+}
+
+.header__slider {
+    max-width: 842px;
+    height: 159px;
+    margin-bottom: 32px;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 86px;
+    color: var(--white);
+    letter-spacing: 0.5px;
+}
+
+.slider__text {
+    max-width: 837px;
+    font-weight: 700;
+    font-size: 23.46px;
+    line-height: 28.6px;
+    color: var(--white);
+    letter-spacing: 0.15px;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 43px;
+}
+
+.headers {
+    font-weight: normal;
+    font-size: 48px;
+}
+
+.about-us__header {
+    margin-bottom: 42px;
+}
+
+.about-us__text {
+    max-width: 1240px;
+    line-height: 32px;
+    letter-spacing: -0.06px;
+}
+
+.tultip {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-image: url(/img/tultip.svg);
+    background-size: cover;
+    vertical-align: text-bottom;
+}
+
+.about-us-block {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.about-us__combo {
+    width: 100%;
+    min-height: 622px;
+    display: flex;
+    flex: 0 1 49%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(/img/slide/Rectangle_2.jpg);
+    background-size: cover;
+
+}
+
+.about-us__left {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+}
+
+.about-us__left__bottom {
+    height: 176px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.left__bottom__text {
+    display: flex;
+    max-width: 497px;
+    height: 90px;
+    margin: 35px auto 42px 54px;
+    font-weight: 700;
+    color: var(--white);
+    line-height: 31.5px;
+    letter-spacing: 0.03px;
+}
+
+.btn-chk {
+    display: flex;
+    align-items: center;
+}
+
+.right-blocks {
+    display: flex;
+    align-items: center;
+    flex: 0 0 47%;
+    border: 1px solid var(--light-gray);
+    box-sizing: border-box;
+}
+
+.about-us__right {
+    display: flex;
+    flex: 0 1 49%;
+
+}
+
+.about-us__right-blocks {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.img__group24 {
+    background-image: url(/img/slide/Group-24.svg);
+    background-size: cover;
+    max-width: 179px;
+    height: 154px;
+    margin: 0px auto 32px auto;
+    flex: 0 1 49%;
+
+}
+
+.img__group25 {
+    background-image: url(/img/slide/Group-25.svg);
+    background-size: cover;
+    max-width: 178px;
+    height: 137px;
+    margin: 72px auto 84px auto;
+    flex: 0 1 49%;
+
+}
+
+.right-blocks__text {
+    margin-right: 103px;
+    max-width: 465px;
+    line-height: 32px;
+    flex: 1 1 49%;
+}
+
+.right-blocks__text__header {
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: -0.11px;
+}
+
+.how-we-work {
+    margin-bottom: 120px;
+    display: flex;
+    flex-direction: column;
+}
+
+.step {
+    max-width: 475px;
+    margin: 70px 0px 45px;
+}
+
+.step-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.step-list-item {
+    font-size: 18px;
+    letter-spacing: 1.5px;
+}
+
+.how-we-work-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.consult-block {
+    flex: 0 0 49%;
+    padding-left: 2px;
+    display: flex;
+    flex-direction: column;
+}
+
+.consult-block__text {
+    max-width: 758px;
+    line-height: 32px;
+}
+
+.consult-slide {
+    flex: 0 0 49%;
+}
+
+.consult-img {
+    background-image: url(/img/Rectangle-18.jpg);
+    background-size: cover;
+    min-height: 465px;
+    width: 100%;
+
+}
+
+.faq__list {
+    margin-top: 54px;
+    display: flex;
+    flex-direction: column;
+}
+
+.faq__list__item {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0.1px;
+    padding-left: 5px;
+    align-items: center;
+    height: 114px;
+    display: flex;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.faq__list__item:first-child {
+    height: 115px;
+    border-top: 1px solid var(--light-gray);
+}
+
+.cross {
+    margin-left: auto;
+}
+
+.footer {
+    margin-top: 102px;
+    height: 630px;
+    background: #222222;
+}
+
+.footer-blocks {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__left {
+    margin-top: 29px;
+    flex: 0 0 20.2%;
+}
+
+.footer-nav {
+    margin-top: 19px;
+    margin-bottom: 114px;
+    height: 237px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footer-nav-link {
+    font-weight: 600;
+    font-size: 18px;
+    color: var(--light-gray);
+}
+
+.footer-social {
+    margin-top: auto;
+    max-width: 230px;
+    height: 60px;
+}
+
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.footer__center {
+    margin-top: 78px;
+    flex: 0 0 32.6%;
+}
+
+.request__header {
+    margin-bottom: 42px;
+    padding-left: 3px;
+    text-align: left;
+    color: var(--light-gray);
+}
+
+.footer__center form {
+    padding-left: 6px;
+
+}
+
+#name, #e-mail {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 25px;
+    padding-left: 22px;
+}
+
+#e-mail {
+    letter-spacing: 2.7px;
+}
+
+#request {
+    margin-bottom: 25px;
+    padding: 22px;
+    width: 100%;
+    height: 150px;
+    text-align: left;
+    letter-spacing: 0.08px;
+}
+
+.custom-checkbox {
+    z-index: -1;
+    opacity: 0;
+}
+
+.checkbox-label {
+    color: var(--light-gray);
+    padding-left: 7px;
+}
+
+.custom-checkbox+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+}
+
+.custom-checkbox+label::before {
+    margin-right: 4px;
+    content: '';
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid var(--light-gray);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+}
+
+.custom-checkbox:checked+label::before {
+    border-color: var(--light-gray);
+    background-color: transparent;
+    background-image: url(/img/Rectangle-44.svg);
+}
+
+#consent {
+    color: var(--black);
+}
+
+.footer__right {
+    margin-top: 127px;
+    flex: 0 0 20.5%;
+
+}
+
+.footer__right__text {
+    line-height: 32px;
+    color: var(--light-gray);
+    letter-spacing: -0.08px;
+}
+
+/* Button */
+.btn_orange {
+    color: var(--white);
+    background: var(--orange);
+}
+
+.btn-slider {
+    font-weight: 700;
+    font-size: 23px;
+    padding: 30px 38px;
+    position: absolute;
+    bottom: 90px;
+    left: 80px;
+}
+
+.btn-border-color_orange {
+    border: 1px solid var(--orange);
+    color: var(--white);
+}
+
+.btn-border-color_gray {
+    border: 1px solid var(--gray);
+    color: var(--gray);
+}
+
+.btn-left__bottom {
+    margin-right: 65px;
+    font-weight: 700;
+    padding: 20px 38px;
+}
+
+.btn-flex-row {
+    display: flex;
+    margin-top: 60px;
+}
+
+.btn-offer {
+    padding: 20px 38px;
+    margin-right: 29px;
+    display: inline;
+}
+
+.btn-contract {
+    padding: 20px 38px;
+    display: inline;
+}
+
+.btn-request {
+    font-weight: bold;
+    padding: 20px 50px;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.bullet-box {
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+    position: absolute;
+    bottom: 30px;
+    left: calc(50% - 42px);
+}
+
+.bullet1, .bullet2, .bullet3 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+}
+
+/* Hover */
+.nav__link:hover {
+    text-decoration: underline var(--orange);
+}
+
+.btn-search:hover {
+    background-image: url(/img/Search_org.svg);
+    cursor: pointer;
+}
+
+.btn-left__bottom:hover {
+    background: var(--orange);
+}
+
+.btn-slider:hover {
+    background: rgba(255, 153, 0, 0.6);
+}
+
+.step-link:hover {
+    color: var(--orange);
+}
+
+.step-list-item:first-child a {
+    color: var(--orange);
+}
+
+.btn-offert:hover, .offert__link:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.faq__list__item:hover {
+    color: var(--orange);
+    cursor: pointer;
+}
+
+.bullet1:hover, .bullet2:hover, .bullet3:hover {
+    background: var(--white);
+}
+
+
+/* Active */
+.cross:active, .cross:hover {
+    cursor: pointer;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    transition: all 0.3s ease 0s;
+    color: var(--orange);
+}
+
+
+
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .nav-toggle {
+        display: block;
+        margin-left: 50px;
+        position: absolute;
+        background-image: url(/img/Burger.svg);
+        background-color: var(--white);
+        border: none;
+        width: 30px;
+        height: 23px;
+    }
+
+    .logo {
+        margin: auto;
+        width: 150px;
+        height: 48px;
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    .btn-search {
+        position: absolute;
+        right: 50px;
+        margin: 0;
+    }
+
+    .header__slider {
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        margin-top: 160px;
+        margin-bottom: -3px;
+        letter-spacing: 0.1px;
+    }
+
+    .slider {
+        width: 100%;
+        min-height: 668px;
+        margin-bottom: 78px;
+        background: url(/img/1024/low-angle-photo-of-balconies-668.jpg) 0 0/cover no-repeat;
+    }
+
+    .slider-container {
+        margin: 0 45px;
+        height: 100%;
+    }
+
+    .slider__text {
+        font-size: 20px;
+        line-height: 24px;
+        max-width: 670px;
+        letter-spacing: -0.09px;
+    }
+
+    .about-us {
+        margin-bottom: 58px;
+    }
+
+    .about-us__header {
+        margin-bottom: 45px;
+    }
+
+    .about-us-block {
+        flex-direction: column;
+        margin-bottom: 78px;
+    }
+
+    .about-us__left {
+        height: 641px;
+    }
+
+    .left__bottom__text {
+        margin-left: 43px;
+    }
+
+    .btn-left__bottom {
+        margin-right: 50px;
+    }
+
+    .about-us__right {
+        margin-top: 50px;
+    }
+
+    .right-blocks {
+        min-height: 295px;
+    }
+
+    .img__group25 {
+        margin: 70px 59px 73px 111px;
+    }
+
+    .right-blocks:nth-child(2n) {
+        margin-top: 40px;
+    }
+
+    .img__group24 {
+        margin: 0px 59px 16px 110px;
+    }
+
+    .how-we-work {
+        margin-bottom: 78px;
+    }
+
+    .consult-block, .consult-slide {
+        flex: 0 0 47%;
+    }
+
+    .consult-img {
+        background: url(/img/1024/Rectangle-18.jpg) no-repeat;
+        min-height: 689px;
+    }
+
+    .consult-block__text {
+        margin-bottom: 27px;
+        max-width: 437px;
+    }
+
+    .step {
+        max-width: 475px;
+        margin: 70px 0px 45px;
+    }
+
+    .btn-flex-row {
+        margin-top: 0;
+    }
+
+    .faq__list {
+        margin-top: 57px;
+    }
+
+    .faq__list__item:first-child {
+        height: 125px;
+    }
+
+    .faq__list__item {
+        padding: 0;
+        font-size: 20px;
+        letter-spacing: -0.09px;
+    }
+
+    .footer {
+        margin-top: 95px;
+    }
+
+    .footer__right {
+        display: none;
+    }
+
+    .footer-blocks {
+        justify-content: space-between;
+    }
+
+    .footer__left {
+        flex: 0 0 30%;
+        margin-top: 10px;
+    }
+
+    .footer__center {
+        flex: 0 0 69%;
+        margin-top: 42px;
+        max-width: 540px;
+    }
+
+    .checkbox-label {
+        padding-left: 1px;
+    }
+
+    .btn-request {
+        padding: 20px 35px;
+    }
+
+    /* Button */
+    .btn-slider {
+        padding: 30px 41px;
+        position: absolute;
+        bottom: 114px;
+        left: 45px;
+        letter-spacing: 0.15px;
+    }
+}
+
+/* Шрифты */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Black.woff2') format('woff2'),
+        url('/fonts/Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
+        url('/fonts/Montserrat-SemiBold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
+        url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
+        url('/fonts/Montserrat-Bold.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
+        url('/fonts/Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
