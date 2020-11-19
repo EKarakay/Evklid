@@ -1,0 +1,239 @@
+
+@media (max-width: 1200px) {
+  
+  .nav__item {
+      margin-left: 50px;
+  }
+
+  .header__search {
+      margin-left: 40px;
+  }
+
+  .br {
+    display: inherit;
+  }
+
+  .footer__right {
+      display: none;
+  }
+
+  .footer__center {
+      flex: 0 0 50%;
+  }
+}
+
+
+@media (max-width: 1024px) {
+    .container {
+        padding: 0 50px;
+    }
+
+    .header__container {
+        margin-bottom: 0;
+        padding: 0 50px;
+    }
+
+    .nav-toggle {
+        margin-right: auto;
+        display: block;
+        background-image: url(/img/Burger.svg);
+        background-color: var(--white);
+        border: none;
+        width: 30px;
+        height: 23px;
+    }
+
+    .logo {
+        background-image: url(/img/1024/logo.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 150px;
+        height: 48px;
+    }
+
+    .header__left {
+        display: none;
+    }
+
+    .btn-search {
+        margin-left: auto;
+        padding: 0;
+        width: 24px;
+        height: 25px;
+    }
+
+    .slide-container {
+        padding: 0 50px;
+    }
+
+    .slide__text {
+        margin-bottom: 110px;
+        font-size: 20px;
+        line-height: 24px;
+        letter-spacing: -0.09px;
+    }
+
+    .header__slide {
+        margin-bottom: 10px;
+        font-weight: 800;
+        font-size: 60px;
+        line-height: 73px;
+        letter-spacing: 0.1px;
+    }
+
+    .slide {
+        margin-bottom: 58px;
+        padding: 160px 100px 114px 45px;
+        background: url(/img/1024/low.png);
+        background-repeat: no-repeat;
+        background-position: 50% 101%;
+    }
+
+    .col-2 {
+        flex: none;
+    }
+
+    .about-us {
+        margin-bottom: 59px;
+    }
+
+    .about-us__text {
+        margin-bottom: 59px;
+        max-width: 100%;
+        letter-spacing: -0.11px;
+    }
+
+    .about-us__header {
+        margin-bottom: 26px;
+        margin-left: -3px;
+    }
+
+    .about-us-block {
+        flex-direction: column;
+    }
+
+    .about-us__left {
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(/img/1024/Rectangle.png);
+        margin-bottom: 51px;
+        min-height: 641px;
+    }
+    
+    .about-us__left__bottom {
+        padding: 39px 50px 42px 44px;
+    }
+
+    .left__bottom__text {
+        max-width: 60%;
+    }
+
+    .right-block1 {
+        margin-bottom: 40px;
+        padding: 63px 110px 66px 348px;
+        background-position: 14.9% 47%;
+    }
+
+    .right-block2 {
+        padding: 63px 110px 66px 348px;
+        background-position: 14.9% 44%;
+    }
+
+    .how-we-work {
+        margin-bottom: 60px;
+        margin-left: -2px;
+    }
+
+    .how-we-work__header {
+        margin-left: -4px;
+        margin-bottom: 49px;
+    }
+
+    .step {
+        margin-bottom: 47px;
+    }
+
+    .faq {
+        margin-bottom: 90px;
+        margin-left: -3px;
+    }
+
+    .faq__header {
+        margin-bottom: 38px;
+    }
+
+    .faq__list__item {
+        padding: 0;
+        height: 115px;
+        font-size: 20px;
+        line-height: 32px;
+    }
+
+    .faq__list__item:first-child {
+        height: 125px;
+    }
+
+    .col-2-sm {
+        flex: 0 0 47.3%;
+    }
+
+    .consult-block__text {
+        padding-bottom: 28px;
+        max-width: 100%;
+    }
+    .consult-slide {
+        background-image: url(/img/1024/Rectangle-18.jpg);
+    }
+
+    .footer__left {
+        margin-top: 12px;
+    }
+
+    .footer__center {
+        flex: 0 0 59%;
+        margin-top: 22px;
+        max-width: 58.5%;
+    }
+
+    .request__header {
+        margin-bottom: 23px;
+    }
+
+    .checkbox-label {
+        padding-left: 1px;
+    }
+
+    .custom-checkbox+label::before {
+        margin-right: 0;
+    }
+    
+    /* Button */
+    
+    .btn-slide {
+        padding: 26px 38px;
+        font-size: 24px;
+        line-height: 29px;
+        letter-spacing: 0.15px;
+    }
+
+    .btn-contract {
+        padding: 19px 38px;
+    }
+
+    .btn-request {
+        font-weight: bold;
+        padding: 20px 36px;
+    }
+
+}
+
+
+@media (max-width: 860px) {
+
+  .btn-offer {
+      padding: 19px 19px ;
+  }
+
+ .btn-contract {
+      padding: 18px 30px;
+  }
+
+}
