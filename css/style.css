@@ -70,6 +70,10 @@ body {
     margin-left: auto;
 }
 
+.nav__list {
+    margin-top: 5px;
+  }
+
 .header__left {
     display: flex;
     align-items: center;
@@ -95,6 +99,7 @@ body {
 
 .header__search {
     margin-left: 71px;
+    margin-top: 5px;
     width: 25px;
     height: 26px;
     background-image: url(/img/Search.svg);
@@ -425,6 +430,7 @@ body {
 
 #name, #e-mail, #request {
     background: #414141;
+    color: white;
 }
 
 .custom-checkbox {

@@ -349,7 +349,7 @@
   }
 
   .logo {
-      margin-right: 5px;
+      margin-right: -3px;
       margin-bottom: 1px;
   }
 
@@ -433,6 +433,10 @@
       padding: 20px 39px;
   }
 
+  .step {
+      max-width: 100%;
+  }
+
   .step-list-item {
       letter-spacing: 0.3px;
       white-space: nowrap;
@@ -502,15 +506,18 @@
   .footer-blocks {
       flex-flow: column-reverse;
   }
-
+  .footer__logo {
+      margin-left: 0;
+  }
   .footer__center {
-      margin-top: 28px;
+      margin-top: 24px;
       max-width: 81%;
       margin-left: -6px;
   }
 
   .footer__left {
       margin-top: 57px;
+      margin-bottom: 59px;
   }
   .nav-footer {
       display: none;
