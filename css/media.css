@@ -1,3 +1,50 @@
+@media (max-width: 1366px) {
+
+    .about-us-block {
+        flex-direction: column;
+    }
+
+    .about-us__left {
+        margin-bottom: 51px;
+        min-height: 768px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.31) 100%), url(/img/1024/Rectangle.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .about-us__left__bottom {
+        padding: 50px;
+    }
+
+    .left__bottom__text {
+        max-width: 60%;
+    }
+    .about-us__right {
+        margin-left: 0;
+    }
+    .right-block1 {
+        margin-bottom: 40px;
+        padding: 63px 110px 66px 348px;
+        background-position: 14.9% 47%;
+    }
+
+    .right-block2 {
+        padding: 63px 110px 66px 348px;
+        background-position: 14.9% 44%;
+    }
+
+    .faq__list__item:nth-child(4) .br {
+        display: inherit;
+    }
+
+    .footer__right {
+        display: none;
+    }
+
+    .footer__center {
+        flex: unset;
+    }
+}
 
 @media (max-width: 1200px) {
   
@@ -38,12 +85,14 @@
         display: block;
         background-image: url(/img/Burger.svg);
         background-color: var(--white);
+        background-repeat: no-repeat;
         border: none;
         width: 30px;
         height: 23px;
     }
 
     .logo {
+        margin-left: -7px;
         background-image: url(/img/1024/logo.png);
         background-size: cover;
         background-repeat: no-repeat;
@@ -57,6 +106,7 @@
 
     .btn-search {
         margin-left: auto;
+        margin-top: 2px;
         padding: 0;
         width: 24px;
         height: 25px;
@@ -97,6 +147,10 @@
         margin-bottom: 59px;
     }
 
+    .about-us__right {
+        margin-left: 0px;
+    }
+    
     .about-us__text {
         margin-bottom: 59px;
         max-width: 100%;
@@ -145,6 +199,7 @@
     .how-we-work__header {
         margin-left: -4px;
         margin-bottom: 49px;
+        letter-spacing: -0.2px;
     }
 
     .step {
@@ -152,12 +207,13 @@
     }
 
     .faq {
-        margin-bottom: 90px;
-        margin-left: -3px;
+        margin-bottom: 94px;
     }
 
     .faq__header {
         margin-bottom: 38px;
+        margin-left: -3px;
+        letter-spacing: -0.15px;
     }
 
     .faq__list__item {
@@ -171,6 +227,45 @@
         height: 125px;
     }
 
+    .faq__list__item:first-child .cross {
+        margin-top: 20px;
+    }
+
+    .faq__list__item:nth-child(2) .cross {
+        margin-top: 9px;
+    }
+
+    .faq__list__item:nth-child(3) {
+        height: 114px;
+    }
+
+    .faq__list__item:nth-child(3) .br {
+        display: none;
+    }
+
+    .faq__list__item:nth-child(3) .cross {
+        margin-top: 9px;
+    }
+
+    .faq__list__item:nth-child(4) {
+        height: 114px;
+    }
+
+    .faq__list__item:nth-child(4) .br {
+        display: none;
+    }
+
+    .faq__list__item:nth-child(4) .cross {
+        margin-top: 9px;
+    }
+ 
+    .faq__list__item:nth-child(5) {
+        height: 114px;
+    }
+
+    .faq__list__item:nth-child(5) .cross {
+        margin-top: 9px;
+    }
     .col-2-sm {
         flex: 0 0 47.3%;
     }
@@ -185,6 +280,10 @@
 
     .footer__left {
         margin-top: 12px;
+    }
+
+    .footer__logo {
+        margin-left: -1px;
     }
 
     .footer__center {
@@ -236,4 +335,195 @@
       padding: 18px 30px;
   }
 
+}
+
+@media (max-width: 768px) {
+
+  .header__container {
+      padding-left: 48px;
+      height: 69px;
+  }
+
+  .nav-toggle {
+      padding-bottom: 26px;
+  }
+
+  .logo {
+      margin-right: 5px;
+      margin-bottom: 1px;
+  }
+
+  .btn-search {
+      margin-bottom: 2px;
+  }
+
+  .slide-container {
+      padding: 0;
+  }
+
+  .slide {
+      padding: 191px 20px 90px 49px;
+      background: url(/img/768/768.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position-y: bottom;
+      height: 699px;
+  }
+  .about-us__text {
+      margin-bottom: 54px;
+  }
+  .about-us__left {
+      margin-bottom: 40px;
+      min-height: 656px;
+      background-image: url(/img/768/Rectangle-2.png);
+      background-position: center bottom;
+      background-repeat: no-repeat;
+  }
+
+  .about-us__left__bottom {
+      padding: 23px 30px 26px 29px;
+  }
+
+  .left__bottom__text {
+      max-width: 65%;
+  }
+
+  .btn-left__bottom {
+      line-height: 17px;
+  }
+
+  .how-we-work {
+      margin-left: 0;
+      margin-bottom: 58px;
+  }
+
+  .how-we-work__header {
+      letter-spacing: -0.2px;
+      margin-left: -6px;
+  }
+  
+  .how-we-work-block {
+      display: block;
+  }
+
+  .consult-block {
+      order: 0;
+      padding-left: 0;
+  }
+
+  .consult-block__text {
+    letter-spacing: -0.15px;
+  }
+
+  .consult-slide {
+      background-image: url(/img/768/Rectangle-18.png);
+  }
+
+  .consult-slide {
+      min-height: 284px;
+      margin-bottom: 39px;
+  }
+
+  .btn-contract {
+      padding: 20px 36px;
+  }
+
+  .btn-offer {
+      margin-right: 27px;
+      padding: 20px 39px;
+  }
+
+  .step-list-item {
+      letter-spacing: 0.3px;
+      white-space: nowrap;
+  }
+
+  .faq {
+      margin-left: 0;
+  }
+
+  .faq__header {
+      letter-spacing: -0.95px;
+      white-space: nowrap;
+      margin-bottom: 38px;
+  }
+  
+  .cross {
+      margin-left: 70px;
+      margin-top: 11px;
+  }
+
+  .br {
+      display: none;
+  }
+
+  .faq__list__item {
+      height: 114px;
+  }
+
+  .faq__list__item:first-child .cross {
+      margin-top: 19px;
+  }
+
+  .faq__list__item:nth-child(2) .cross {
+      margin-top: 10px;
+  }
+
+  .faq__list__item:nth-child(3) .br {
+      display: inherit;
+  }
+
+  .faq__list__item:nth-child(3) .cross {
+      margin-left: auto;
+  }
+
+  .faq__list__item:nth-child(4) .br {
+      display: inherit;
+  }
+
+  .faq__list__item:nth-child(4) .cross {
+      margin-left: auto;
+  }
+
+
+
+  .right-block1 {
+      padding: 35px 37px 35px 177px;
+      background-position: 5.4% 50.5%;
+      background-size: 17.7%;
+  }
+
+  .right-block2 {
+      padding: 35px 37px 35px 177px;
+      background-position: 5.4% 50.8%;
+      background-size: 17.3%;
+  }
+
+  .footer-blocks {
+      flex-flow: column-reverse;
+  }
+
+  .footer__center {
+      margin-top: 28px;
+      max-width: 81%;
+      margin-left: -6px;
+  }
+
+  .footer__left {
+      margin-top: 57px;
+  }
+  .nav-footer {
+      display: none;
+  }
+  .footer-social {
+      margin-top: 11px;
+  }
+
+  @media (max-width: 767px) {
+
+    .faq__header {
+      white-space: normal;
+    }
+
+  } 
 }

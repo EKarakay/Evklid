@@ -208,12 +208,8 @@ body {
     align-items: center;
 }
 
-.about-us__right-blocks {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex-wrap: wrap;
+.about-us__right {
+    margin-left: 30px;
 }
 
 .col-2 {
@@ -283,6 +279,7 @@ body {
 
 .consult-block {
     padding-left: 2px;
+    order: -1;
 }
 
 .consult-block__text {
