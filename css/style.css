@@ -408,6 +408,10 @@ body {
 
 }
 
+textarea {
+    resize: none;
+}
+
 #name, #e-mail {
     width: 100%;
     height: 60px;

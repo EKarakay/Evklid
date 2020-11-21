@@ -56,6 +56,10 @@
       margin-left: 40px;
   }
 
+  .step {
+      max-width: 45%;
+  }
+
   .br {
     display: inherit;
   }
