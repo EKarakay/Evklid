@@ -13,29 +13,29 @@
 <body>
   <!-- Header -->
   <header class="header__container header">
-    <button class="nav-toggle"></button>
-    <a href="#" class="header__logo logo"></a>
+    <button tabindex="0" aria-label="Открыть верхнее меню сайта" class="nav-toggle"></button>
+    <a tabindex="1" href="#" aria-label="Переход на главную страницу сайта" class="header__logo logo"></a>
     <!-- Navigation -->
-    <nav class="header__left nav">
+    <nav aria-label="Верхнее меню сайта" class="header__left nav">
       <ul class="nav__list">
-        <li class="nav__item">
+        <li tabindex="2" class="nav__item">
           <a href="#about-us" class="nav__link">О нас</a>
         </li>
-        <li class="nav__item">
+        <li tabindex="3" class="nav__item">
           <a href="#" class="nav__link">Проекты</a>
         </li>
-        <li class="nav__item">
+        <li tabindex="4" class="nav__item">
           <a href="#" class="nav__link">Этапы</a>
         </li>
-        <li class="nav__item">
+        <li tabindex="5" class="nav__item">
           <a href="#" class="nav__link">Отзывы</a>
         </li>
-        <li class="nav__item">
+        <li tabindex="6" class="nav__item">
           <a href="#" class="nav__link">Контакты</a>
         </li>
       </ul>
     </nav>
-    <button class="btn-search header__search"></button>
+    <button tabindex="7" aria-label="Поиск по сайту" class="btn-search header__search"></button>
   </header>
   <main>
     <!-- Slide -->
@@ -45,7 +45,7 @@
         <div class="slide__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
           остаются уделом проектантов
         </div>
-        <a href="#" class="btn_orange btn-slide btn-esm">Заказать расчёт</a>
+        <a tabindex="8" href="#" aria-label="Кнопка Заказать расчёт" class="btn_orange btn-slide btn-esm">Заказать расчёт</a>
         <div class="bullet-box">
           <div class="bullet1"></div>
           <div class="bullet2"></div>
@@ -86,7 +86,7 @@
                 планирование
                 способствует подготовке и реализации новых
                 принципов.</span>
-              <a href="#" class="btn-border-color_orange btn-left__bottom ">Подробнее</a>
+              <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom ">Подробнее</a>
             </div>
           </div>
           <div class="about-us__left__bottom-esm">
@@ -94,7 +94,7 @@
               планирование
               способствует подготовке и реализации новых
               принципов.</span>
-            <a href="#" class="btn-border-color_orange btn-left__bottom btn-esm">Подробнее</a>
+            <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom btn-esm">Подробнее</a>
           </div>
           <!-- Right blocks about-us -->
           <div class="about-us__right about-us__col">
@@ -127,19 +127,17 @@
         </div>
       </section>
       <section class="how-we-work">
-        <h3 class="headers how-we-work__header">Как мы работаем</h3>
+        <h2 class="headers how-we-work__header">Как мы работаем</h2>
         <div class="step #step">
-          <ul class="step-list">
-            <li class="step-list-item"><a class="step-link" href="#step">1 шаг</a></li>
-            <li class="step-list-item"><a class="step-link" href="#step">2 шаг</a></li>
-            <li class="step-list-item"><a class="step-link" href="#step">3 шаг</a></li>
-            <li class="step-list-item"><a class="step-link" href="#step">4 шаг</a></li>
+          <ul aria-roledescription="Список как мы работаем" class="step-list">
+            <li tabindex="10" class="step-list-item"><a class="step-link" href="#step">1 шаг</a></li>
+            <li tabindex="11" class="step-list-item"><a class="step-link" href="#step">2 шаг</a></li>
+            <li tabindex="12" class="step-list-item"><a class="step-link" href="#step">3 шаг</a></li>
+            <li tabindex="13" class="step-list-item"><a class="step-link" href="#step">4 шаг</a></li>
           </ul>
         </div>
         <div class="how-we-work-block">
           <div class="consult-slide col-2 col-2-sm">
-            <!-- <img class="consult-img" src="/img/Rectangle-18.jpg" alt="">
-                  <img class="consult-img_sm" src="/img/1024/Rectangle-18.jpg" alt=""> -->
           </div>
           <div class="consult-block col-2 col-2-sm">
             <div class="consult-block__text">
@@ -165,8 +163,8 @@
                 разумеется,
                 призваны к ответу.</span>
             </div>
-            <a href="#" class="btn_orange btn-offer">Подробнее</a>
-            <a href="#" class="btn-border-color_gray btn-contract">Договор</a>
+            <a tabindex="14" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
+            <a tabindex="15" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
           </div>
 
 
@@ -195,16 +193,16 @@
               разумеется,
               призваны к ответу.</span>
             <!-- </div> -->
-            <a href="#" class="btn_orange btn-offer">Подробнее</a>
-            <a href="#" class="btn-border-color_gray btn-contract">Договор</a>
+            <a tabindex="16" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
+            <a tabindex="17" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
           </div>
 
         </div>
       </section>
       <section class="faq">
-        <h3 class="headers faq__header">Часто задаваемые вопросы</h3>
-        <ul class="faq__list">
-          <li class="faq__list__item">Из чего формируется конечная стоимость проекта?
+        <h2 class="headers faq__header">Часто задаваемые вопросы</h2>
+        <ul aria-roledescription="Список вопросов" class="faq__list">
+          <li tabindex="18" class="faq__list__item">Из чего формируется конечная стоимость проекта?
             <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="25" fill="#ECECEC" />
@@ -214,7 +212,7 @@
               </svg>
             </div>
           </li>
-          <li class="faq__list__item">У меня есть свой проект. Сможем ли мы его доработать /
+          <li tabindex="19" class="faq__list__item">У меня есть свой проект. Сможем ли мы его доработать /
             <br class="br">реализовать?
             <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -225,7 +223,7 @@
               </svg>
             </div>
           </li>
-          <li class="faq__list__item">Я выбираю между разными компаниями. <br class="br">В чём ваше отличие?
+          <li tabindex="20" class="faq__list__item">Я выбираю между разными компаниями. <br class="br">В чём ваше отличие?
             <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="25" fill="#ECECEC" />
@@ -235,7 +233,7 @@
               </svg>
             </div>
           </li>
-          <li class="faq__list__item">Могу ли я делегировать вам работу / <br class="br">согласование с подрядчиком /
+          <li tabindex="21" class="faq__list__item">Могу ли я делегировать вам работу / <br class="br">согласование с подрядчиком /
             организацией?
             <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -246,7 +244,7 @@
               </svg>
             </div>
           </li>
-          <li class="faq__list__item">Могу ли я вернуть деньги на каком-либо из этапов работ?
+          <li tabindex="22" class="faq__list__item">Могу ли я вернуть деньги на каком-либо из этапов работ?
             <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
                 <circle cx="25" cy="25" r="25" fill="#ECECEC" />
@@ -262,57 +260,57 @@
     <footer class="footer">
       <div class="container footer-blocks">
         <div class="footer__left">
-          <a href="#" class="footer__logo"><img src="/img/logo-2.png" alt="Евклид"></a>
-          <a href="#" class="footer__logo-esm"><img src="/img/320/logo.png" alt="Евклид"></a>
-          <nav class="nav-footer">
+          <a tabindex="23" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo"><img src="/img/logo-2.png" alt="Евклид"></a>
+          <a tabindex="24" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo-esm"><img src="/img/320/logo.png" alt="Евклид"></a>
+          <nav aria-label="Нижнее меню сайта" class="nav-footer">
             <ul class="footer-nav">
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#about-us" target="_blank"
+              <li tabindex="25" class="footer-nav__item"><a class="footer-nav-link" href="#about-us" target="_blank"
                   rel="noopener noreferrer">О нас</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="26" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Проекты</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="27" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Отзывы</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="28" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Договор оферты</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="29" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Договор подряда</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="30" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Конфиденциальность</a></li>
-              <li class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
+              <li tabindex="31" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
                   rel="noopener noreferrer">Партнёрское соглашение</a></li>
             </ul>
           </nav>
           <div class="footer-social">
-            <ul class="social">
-              <li class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/fb.svg" alt="fb"></a></li>
-              <li class="social-link"><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/vk.svg" alt="vk"></a></li>
-              <li class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/in.svg" alt="in"></a></li>
+            <ul aria-roledescription="Ссылки в соцсетях" class="social">
+              <li tabindex="32" class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="/img/social/fb.svg" alt="facebook"></a></li>
+              <li tabindex="33" class="social-link"><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img
+                    src="/img/social/vk.svg" alt="vkontakte"></a></li>
+              <li tabindex="34" class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                    src="/img/social/in.svg" alt="instagram"></a></li>
             </ul>
           </div>
           <div class="footer-social-esm">
-            <ul class="social">
-              <li class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/320/social/fb.svg" alt="fb"></a></li>
-              <li class="social-link"><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img
+            <ul aria-roledescription="Ссылки в соцсетях" class="social">
+              <li tabindex="32" class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
+                    src="/img/320/social/fb.svg" alt="facebook"></a></li>
+              <li tabindex="33" class="social-link"><a href="https://vkontakte.com" target="_blank" rel="noopener noreferrer"><img
                     src="/img/320/social/vk.svg" alt="vk"></a></li>
-              <li class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/320/social/in.svg" alt="in"></a></li>
+              <li tabindex="34" class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
+                    src="/img/320/social/in.svg" alt="instagram"></a></li>
             </ul>
           </div>
 
         </div>
         <div class="footer__center">
-          <h3 class="headers request__header">Оставить заявку</h3>
+          <h2 class="headers request__header">Оставить заявку</h2>
           <form action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="on">
-            <input type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required>
-            <input type="email" name="e-mail" id="e-mail" placeholder="E-mail*" required>
-            <textarea name="message" id="request" placeholder="Сообщение" required autofocus></textarea>
+            <input tabindex="35" aria-label="Введите фамилию имя отчество" type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required>
+            <input tabindex="36" aria-label="Введите email" type="email" name="e-mail" id="e-mail" placeholder="E-mail*" required>
+            <textarea tabindex="37" aria-label="Введите сообщение" name="message" id="request" placeholder="Сообщение" required></textarea>
             <div class="btn-chk">
-              <button type="submit" class="btn_orange btn-request">Отправить данные</button>
-              <input type="checkbox" checked name="consent" id="consent" class="custom-checkbox">
+              <button tabindex="38" aria-label="Отправить данные" type="submit" class="btn_orange btn-request">Отправить данные</button>
+              <input tabindex="39" aria-label="Чекбокс" type="checkbox" checked name="consent" id="consent" class="custom-checkbox">
               <label class="checkbox-label" for="consent">Согласен на обработку данных</label>
             </div>
           </form>
