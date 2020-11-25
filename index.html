@@ -2,148 +2,155 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/css/normalize.css">
-  <link rel="stylesheet" href="/css/style.css">
-  <link rel="stylesheet" href="/css/media.css">
-  <title>"Евклид" Проектные системы</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/media.css">
+    <title>"Евклид" Проектные системы</title>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="/js/accordion.js"></script>
+    <script src="/js/swiper.js"></script>
+    <script src="/js/menu.js"></script>
 </head>
 
 <body>
-  <!-- Header -->
-  <header class="header__container header">
-    <button tabindex="0" aria-label="Открыть верхнее меню сайта" class="nav-toggle"></button>
-    <a tabindex="1" href="#" aria-label="Переход на главную страницу сайта" class="header__logo logo"></a>
-    <!-- Navigation -->
-    <nav aria-label="Верхнее меню сайта" class="header__left nav">
-      <ul class="nav__list">
-        <li tabindex="2" class="nav__item">
-          <a href="#about-us" class="nav__link">О нас</a>
-        </li>
-        <li tabindex="3" class="nav__item">
-          <a href="#" class="nav__link">Проекты</a>
-        </li>
-        <li tabindex="4" class="nav__item">
-          <a href="#" class="nav__link">Этапы</a>
-        </li>
-        <li tabindex="5" class="nav__item">
-          <a href="#" class="nav__link">Отзывы</a>
-        </li>
-        <li tabindex="6" class="nav__item">
-          <a href="#" class="nav__link">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-    <button tabindex="7" aria-label="Поиск по сайту" class="btn-search header__search"></button>
-  </header>
-  <main>
-    <!-- Slide -->
-    <section class="slide-container">
-      <div class="slide">
-        <h1 class="header__slide">Проектные решения любой сложности</h1>
-        <div class="slide__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день
-          остаются уделом проектантов
-        </div>
-        <a tabindex="8" href="#" aria-label="Кнопка Заказать расчёт" class="btn_orange btn-slide btn-esm">Заказать расчёт</a>
-        <div class="bullet-box">
-          <div class="bullet1"></div>
-          <div class="bullet2"></div>
-          <div class="bullet3"></div>
-        </div>
-      </div>
-    </section>
-    <div class="container">
-      <!-- About us -->
-      <section class="about-us" id="about-us">
-        <h2 class="headers about-us__header">О нас</h2>
-        <div class="about-us__text">Также как перспективное планирование создаёт необходимость включения в
-          производственный
-          план целого ряда внеочередных
-          мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А
-          также
-          диаграммы
-          связей
-          могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость
-          некоторых
-          оппонентов
-          требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует
-          отметить,
-          что
-          высококачественный прототип <div class="tultip"></div> будущего проекта предопределяет высокую
-          востребованность позиций, занимаемых
-          участниками
-          в
-          отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип
+    <!-- Header -->
+    <header class="header__container header">
+        <button tabindex="0" aria-label="Открыть верхнее меню сайта" id="burger" class="nav-toggle"></button>
+        <a tabindex="1" href="#" aria-label="Переход на главную страницу сайта" class="header__logo logo"></a>
+        <!-- Navigation -->
+        <nav aria-label="Верхнее меню сайта" id="menu" class="header__left nav">
+            <ul class="nav__list">
+                <li tabindex="2" class="nav__item">
+                    <a href="#about-us" class="nav__link">О нас</a>
+                </li>
+                <li tabindex="3" class="nav__item">
+                    <a href="#" class="nav__link">Проекты</a>
+                </li>
+                <li tabindex="4" class="nav__item">
+                    <a href="#" class="nav__link">Этапы</a>
+                </li>
+                <li tabindex="5" class="nav__item">
+                    <a href="#" class="nav__link">Отзывы</a>
+                </li>
+                <li tabindex="6" class="nav__item">
+                    <a href="#" class="nav__link">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+        <button tabindex="7" aria-label="Поиск по сайту" class="btn-search header__search"></button>
+    </header>
+    <main>
+        <!-- Slider main container -->
+        <div class="swiper-container slide-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide slide">
+                </div>
+                <div class="swiper-slide slide-1">
+                </div>
+                <div class="swiper-slide slide-2"></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
 
-          будущего проекта способствует повышению качества экспериментов.
         </div>
-        <div class="about-us-block">
-          <!-- Left block about-us -->
-          <div class="about-us__left about-us__col">
-            <div class="about-us__left__bottom">
-              <span class="left__bottom__text">Принимая во внимание показатели успешности, перспективное
+        <div class="slide-container">
+            <div class="slide-text">
+                <h1 class="header__slide">Проектные решения любой сложности</h1>
+                <div class="slide__text">Есть над чем задуматься: базовые сценарии поведения пользователей и по сей день остаются уделом проектантов
+                </div>
+                <a tabindex="8" href="#" aria-label="Кнопка Заказать расчёт" class="btn_orange btn-slide btn-esm">Заказать
+          расчёт</a>
+            </div>
+
+        </div>
+
+        <div class="container">
+            <!-- About us -->
+            <section class="about-us" id="about-us">
+                <h2 class="headers about-us__header">О нас</h2>
+                <div class="about-us__text">Также как перспективное планирование создаёт необходимость включения в производственный план целого ряда внеочередных мероприятий с учётом комплекса экспериментов, поражающих по своей масштабности и грандиозности. А также диаграммы связей
+                    могут быть описаны максимально подробно. Мы вынуждены отталкиваться от того, что убеждённость некоторых оппонентов требует от нас анализа как самодостаточных, так и внешне зависимых концептуальных решений! Следует отметить, что высококачественный
+                    прототип
+                    <div class="tultip"></div> будущего проекта предопределяет высокую востребованность позиций, занимаемых участниками в отношении поставленных задач. Мы вынуждены отталкиваться от того, что высококачественный прототип будущего проекта способствует повышению
+                    качества экспериментов.
+                </div>
+                <div class="about-us-block">
+                    <!-- Left block about-us -->
+                    <div class="about-us__left about-us__col">
+                        <div class="about-us__left__bottom">
+                            <span class="left__bottom__text">Принимая во внимание показатели успешности, перспективное
                 планирование
                 способствует подготовке и реализации новых
                 принципов.</span>
-              <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom ">Подробнее</a>
-            </div>
-          </div>
-          <div class="about-us__left__bottom-esm">
-            <span class="left__bottom__text">Принимая во внимание показатели успешности, перспективное
+                            <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom ">Подробнее</a>
+                        </div>
+                    </div>
+                    <div class="about-us__left__bottom-esm">
+                        <span class="left__bottom__text">Принимая во внимание показатели успешности, перспективное
               планирование
               способствует подготовке и реализации новых
               принципов.</span>
-            <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom btn-esm">Подробнее</a>
-          </div>
-          <!-- Right blocks about-us -->
-          <div class="about-us__right about-us__col">
-            <!-- <ul class="about-us__right-blocks"> -->
-            <div class="bg-esm"></div>
-            <div class="right-block1">
-              <div class="right-blocks__text">
-                <span><b class="right-blocks__text__header">Консультация с широким активом</b><br> А
+                        <a tabindex="9" aria-label="Кнопка посмотреть подробнее" href="#" class="btn-border-color_orange btn-left__bottom btn-esm">Подробнее</a>
+                    </div>
+                    <!-- Right blocks about-us -->
+                    <div class="about-us__right about-us__col">
+                        <!-- <ul class="about-us__right-blocks"> -->
+                        <div class="bg-esm"></div>
+                        <div class="right-block1">
+                            <div class="right-blocks__text">
+                                <span><b class="right-blocks__text__header">Консультация с широким активом</b><br> А
                   также свежий
                   взгляд
                   на привычные вещи - безусловно
                   открывает
                   новые горизонты для как самодостаточных, так и внешне
                   зависимых концептуальных решений.</span>
-              </div>
-            </div>
-            <div class="bg1-esm"></div>
+                            </div>
+                        </div>
+                        <div class="bg1-esm"></div>
 
-            <div class="right-block2">
-              <div class="right-blocks__text">
-                <span><b class="right-blocks__text__header">В своём стремлении повысить</b><br> Качество
+                        <div class="right-block2">
+                            <div class="right-blocks__text">
+                                <span><b class="right-blocks__text__header">В своём стремлении повысить</b><br> Качество
                   жизни, они
                   забывают, что сплочённость команды
                   профессионалов представляет собой
                   интересный эксперимент проверки прогресса профессионального сообщества.</span>
-              </div>
-            </div>
-            <!-- </ul> -->
-          </div>
-        </div>
-      </section>
-      <section class="how-we-work">
-        <h2 class="headers how-we-work__header">Как мы работаем</h2>
-        <div class="step #step">
-          <ul aria-roledescription="Список как мы работаем" class="step-list">
-            <li tabindex="10" class="step-list-item"><a class="step-link" href="#step">1 шаг</a></li>
-            <li tabindex="11" class="step-list-item"><a class="step-link" href="#step">2 шаг</a></li>
-            <li tabindex="12" class="step-list-item"><a class="step-link" href="#step">3 шаг</a></li>
-            <li tabindex="13" class="step-list-item"><a class="step-link" href="#step">4 шаг</a></li>
-          </ul>
-        </div>
-        <div class="how-we-work-block">
-          <div class="consult-slide col-2 col-2-sm">
-          </div>
-          <div class="consult-block col-2 col-2-sm">
-            <div class="consult-block__text">
-              <b class="consult-right-blocks__text__header consult-right-blocks__text__header-esm">Проводим
+                            </div>
+                        </div>
+                        <!-- </ul> -->
+                    </div>
+                </div>
+            </section>
+            <section class="how-we-work">
+                <h2 class="headers how-we-work__header">Как мы работаем</h2>
+                <div class="step #step">
+                    <ul aria-roledescription="Список как мы работаем" class="step-list">
+                        <li tabindex="10" class="step-list-item"><a class="step-link" href="#step">1 шаг</a></li>
+                        <li tabindex="11" class="step-list-item"><a class="step-link" href="#step">2 шаг</a></li>
+                        <li tabindex="12" class="step-list-item"><a class="step-link" href="#step">3 шаг</a></li>
+                        <li tabindex="13" class="step-list-item"><a class="step-link" href="#step">4 шаг</a></li>
+                    </ul>
+                </div>
+                <div class="how-we-work-block">
+                    <div class="consult-slide col-2 col-2-sm">
+                    </div>
+                    <div class="consult-block col-2 col-2-sm">
+                        <div class="consult-block__text">
+                            <b class="consult-right-blocks__text__header consult-right-blocks__text__header-esm">Проводим
                 консультацию</b><br>
-              <span> Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В
+                            <span> Влечет за собой процесс внедрения и модернизации приоритизации разума над эмоциями. В
                 рамках
                 спецификации современных
                 стандартов, некоторые особенности внутренней политики будут объективно рассмотрены
@@ -162,17 +169,17 @@
                 конкретные выводы,
                 разумеется,
                 призваны к ответу.</span>
-            </div>
-            <a tabindex="14" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
-            <a tabindex="15" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
-          </div>
+                        </div>
+                        <a tabindex="14" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
+                        <a tabindex="15" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
+                    </div>
 
 
-          <div class="consult-block-esm">
-            <!-- <div> -->
-            <b class="consult-right-blocks__text__header consult-right-blocks__text__header-esm">Проводим
+                    <div class="consult-block-esm">
+                        <!-- <div> -->
+                        <b class="consult-right-blocks__text__header consult-right-blocks__text__header-esm">Проводим
               консультацию</b>
-            <span class="consult-block__text-esm"> Влечет за собой процесс внедрения и модернизации приоритизации разума
+                        <span class="consult-block__text-esm"> Влечет за собой процесс внедрения и модернизации приоритизации разума
               над эмоциями. В
               рамках
               спецификации современных
@@ -192,131 +199,145 @@
               конкретные выводы,
               разумеется,
               призваны к ответу.</span>
-            <!-- </div> -->
-            <a tabindex="16" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
-            <a tabindex="17" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
-          </div>
+                        <!-- </div> -->
+                        <a tabindex="16" aria-label="Кнопка посмотреть подробнее" href="#" class="btn_orange btn-offer">Подробнее</a>
+                        <a tabindex="17" aria-label="Кнопка заключить договор" href="#" class="btn-border-color_gray btn-contract">Договор</a>
+                    </div>
 
+                </div>
+            </section>
+            <section class="faq">
+                <h2 class="headers faq__header">Часто задаваемые вопросы</h2>
+                <div aria-roledescription="Список вопросов" class="faq__list">
+                    <div class="accordion">
+                        <div tabindex="18" class="faq__list__item">
+                            <h3 class="question__header">Из чего формируется конечная стоимость проекта?</h3>
+                            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#ECECEC" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                    fill="#666666" />
+                </svg>
+                            </div>
+                        </div>
+                        <div class="answer">Являясь всего лишь частью общей картины, непосредственные участники технического прогресса призывают нас к новым свершениям, которые, в свою очередь, должны быть своевременно верифицированы. Но высококачественный прототип будущего
+                            проекта является качественно новой ступенью первоочередных требований. А ещё некоторые особенности внутренней политики, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены
+                            нарушающими общечеловеческие нормы этики и морали. И нет сомнений, что явные признаки победы институционализации призывают нас к новым свершениям, которые, в свою очередь, должны быть указаны как претенденты на роль ключевых
+                            факторов. Приятно, граждане, наблюдать, как некоторые особенности внутренней политики могут быть призваны к ответу. Явные признаки победы институционализации набирают популярность среди определенных слоев населения, а значит,
+                            должны быть объединены в целые кластеры себе подобных. Банальные, но неопровержимые выводы, а также многие известные личности призывают нас к новым свершениям, которые, в свою очередь, должны быть представлены в исключительно
+                            положительном свете.
+                        </div>
+                        <div tabindex="19" class="faq__list__item">
+                            <h3 class="question__header">У меня есть свой проект. Сможем ли мы его доработать /
+                                <br class="br">реализовать?</h3>
+                            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#ECECEC" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                    fill="#666666" />
+                </svg>
+                            </div>
+                        </div>
+                        <div class=""></div>
+                        <div tabindex="20" class="faq__list__item">
+                            <h3 class="question__header">Я выбираю между разными компаниями. <br class="br">В чём ваше отличие?
+                            </h3>
+                            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#ECECEC" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                    fill="#666666" />
+                </svg>
+                            </div>
+                        </div>
+                        <div class=""></div>
+                        <div tabindex="21" class="faq__list__item">
+                            <h3 class="question__header">Могу ли я делегировать вам работу / <br class="br">согласование с подрядчиком / организацией?
+                            </h3>
+                            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#ECECEC" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                    fill="#666666" />
+                </svg>
+                            </div>
+                        </div>
+                        <div class=""></div>
+                        <div tabindex="22" class="faq__list__item">
+                            <h3 class="question__header">Могу ли я вернуть деньги на каком-либо из этапов работ?</h3>
+                            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="25" cy="25" r="25" fill="#ECECEC" />
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
+                    fill="#666666" />
+                </svg>
+                            </div>
+                        </div>
+                        <div class=""></div>
+                    </div>
+                </div>
+            </section>
         </div>
-      </section>
-      <section class="faq">
-        <h2 class="headers faq__header">Часто задаваемые вопросы</h2>
-        <ul aria-roledescription="Список вопросов" class="faq__list">
-          <li tabindex="18" class="faq__list__item">Из чего формируется конечная стоимость проекта?
-            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="#ECECEC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                  fill="#666666" />
-              </svg>
-            </div>
-          </li>
-          <li tabindex="19" class="faq__list__item">У меня есть свой проект. Сможем ли мы его доработать /
-            <br class="br">реализовать?
-            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="#ECECEC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                  fill="#666666" />
-              </svg>
-            </div>
-          </li>
-          <li tabindex="20" class="faq__list__item">Я выбираю между разными компаниями. <br class="br">В чём ваше отличие?
-            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="#ECECEC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                  fill="#666666" />
-              </svg>
-            </div>
-          </li>
-          <li tabindex="21" class="faq__list__item">Могу ли я делегировать вам работу / <br class="br">согласование с подрядчиком /
-            организацией?
-            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="#ECECEC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                  fill="#666666" />
-              </svg>
-            </div>
-          </li>
-          <li tabindex="22" class="faq__list__item">Могу ли я вернуть деньги на каком-либо из этапов работ?
-            <div class="cross"><svg class="swg-box" width="50" height="50" viewbox="0 0 50 50" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <circle cx="25" cy="25" r="25" fill="#ECECEC" />
-                <path fill-rule="evenodd" clip-rule="evenodd"
-                  d="M25.0571 24.0571L25.0571 9L25.9429 9L25.9429 24.0571L33.8835 24.0571L41 24.0571L41 24.9429L25.9429 24.9429L25.9429 40L25.0571 40L25.0571 24.9429L10 24.9429L10 24.0571L25.0571 24.0571Z"
-                  fill="#666666" />
-              </svg>
-            </div>
-          </li>
-        </ul>
-      </section>
-    </div>
-    <footer class="footer">
-      <div class="container footer-blocks">
-        <div class="footer__left">
-          <a tabindex="23" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo"><img src="/img/logo-2.png" alt="Евклид"></a>
-          <a tabindex="24" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo-esm"><img src="/img/320/logo.png" alt="Евклид"></a>
-          <nav aria-label="Нижнее меню сайта" class="nav-footer">
-            <ul class="footer-nav">
-              <li tabindex="25" class="footer-nav__item"><a class="footer-nav-link" href="#about-us" target="_blank"
-                  rel="noopener noreferrer">О нас</a></li>
-              <li tabindex="26" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Проекты</a></li>
-              <li tabindex="27" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Отзывы</a></li>
-              <li tabindex="28" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Договор оферты</a></li>
-              <li tabindex="29" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Договор подряда</a></li>
-              <li tabindex="30" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Конфиденциальность</a></li>
-              <li tabindex="31" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank"
-                  rel="noopener noreferrer">Партнёрское соглашение</a></li>
-            </ul>
-          </nav>
-          <div class="footer-social">
-            <ul aria-roledescription="Ссылки в соцсетях" class="social">
-              <li tabindex="32" class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/fb.svg" alt="facebook"></a></li>
-              <li tabindex="33" class="social-link"><a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/vk.svg" alt="vkontakte"></a></li>
-              <li tabindex="34" class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/social/in.svg" alt="instagram"></a></li>
-            </ul>
-          </div>
-          <div class="footer-social-esm">
-            <ul aria-roledescription="Ссылки в соцсетях" class="social">
-              <li tabindex="32" class="social-link"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/320/social/fb.svg" alt="facebook"></a></li>
-              <li tabindex="33" class="social-link"><a href="https://vkontakte.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/320/social/vk.svg" alt="vk"></a></li>
-              <li tabindex="34" class="social-link"><a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img
-                    src="/img/320/social/in.svg" alt="instagram"></a></li>
-            </ul>
-          </div>
+        <footer class="footer">
+            <div class="container footer-blocks">
+                <div class="footer__left">
+                    <a tabindex="23" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo"><img src="/img/logo-2.png" alt="Евклид"></a>
+                    <a tabindex="24" href="#" aria-label="Переход на главную страницу сайта" class="footer__logo-esm"><img src="/img/320/logo.png" alt="Евклид"></a>
+                    <nav aria-label="Нижнее меню сайта" class="nav-footer">
+                        <ul class="footer-nav">
+                            <li tabindex="25" class="footer-nav__item"><a class="footer-nav-link" href="#about-us" target="_blank" rel="noopener noreferrer">О нас</a></li>
+                            <li tabindex="26" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Проекты</a></li>
+                            <li tabindex="27" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Отзывы</a></li>
+                            <li tabindex="28" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Договор оферты</a></li>
+                            <li tabindex="29" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Договор подряда</a></li>
+                            <li tabindex="30" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Конфиденциальность</a></li>
+                            <li tabindex="31" class="footer-nav__item"><a class="footer-nav-link" href="#" target="_blank" rel="noopener noreferrer">Партнёрское соглашение</a></li>
+                        </ul>
+                    </nav>
+                    <div class="footer-social">
+                        <ul aria-roledescription="Ссылки в соцсетях" class="social">
+                            <li tabindex="32" class="social-link">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/img/social/fb.svg" alt="facebook"></a>
+                            </li>
+                            <li tabindex="33" class="social-link">
+                                <a href="https://vk.com" target="_blank" rel="noopener noreferrer"><img src="/img/social/vk.svg" alt="vkontakte"></a>
+                            </li>
+                            <li tabindex="34" class="social-link">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="/img/social/in.svg" alt="instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-social-esm">
+                        <ul aria-roledescription="Ссылки в соцсетях" class="social">
+                            <li tabindex="32" class="social-link">
+                                <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="/img/320/social/fb.svg" alt="facebook"></a>
+                            </li>
+                            <li tabindex="33" class="social-link">
+                                <a href="https://vkontakte.com" target="_blank" rel="noopener noreferrer"><img src="/img/320/social/vk.svg" alt="vk"></a>
+                            </li>
+                            <li tabindex="34" class="social-link">
+                                <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><img src="/img/320/social/in.svg" alt="instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
 
-        </div>
-        <div class="footer__center">
-          <h2 class="headers request__header">Оставить заявку</h2>
-          <form action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="on">
-            <input tabindex="35" aria-label="Введите фамилию имя отчество" type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required>
-            <input tabindex="36" aria-label="Введите email" type="email" name="e-mail" id="e-mail" placeholder="E-mail*" required>
-            <textarea tabindex="37" aria-label="Введите сообщение" name="message" id="request" placeholder="Сообщение" required></textarea>
-            <div class="btn-chk">
-              <button tabindex="38" aria-label="Отправить данные" type="submit" class="btn_orange btn-request">Отправить данные</button>
-              <input tabindex="39" aria-label="Чекбокс" type="checkbox" checked name="consent" id="consent" class="custom-checkbox">
-              <label class="checkbox-label" for="consent">Согласен на обработку данных</label>
-            </div>
-          </form>
-        </div>
-        <div class="footer__right">
-          <span class="footer__right__text">Высокий уровень вовлечения представителей целевой аудитории
+                </div>
+                <div class="footer__center">
+                    <h2 class="headers request__header">Оставить заявку</h2>
+                    <form action="https://jsonplaceholder.typicode.com/posts" method="post" autocomplete="on">
+                        <input tabindex="35" aria-label="Введите фамилию имя отчество" type="text" name="name" id="name" placeholder="Фамилия, имя и отчество*" required>
+                        <input tabindex="36" aria-label="Введите email" type="email" name="e-mail" id="e-mail" placeholder="E-mail*" required>
+                        <textarea tabindex="37" aria-label="Введите сообщение" name="message" id="request" placeholder="Сообщение" required></textarea>
+                        <div class="btn-chk">
+                            <button tabindex="38" aria-label="Отправить данные" type="submit" class="btn_orange btn-request">Отправить
+                данные</button>
+                            <input tabindex="39" aria-label="Чекбокс" type="checkbox" checked name="consent" id="consent" class="custom-checkbox">
+                            <label class="checkbox-label" for="consent">Согласен на обработку данных</label>
+                        </div>
+                    </form>
+                </div>
+                <div class="footer__right">
+                    <span class="footer__right__text">Высокий уровень вовлечения представителей целевой аудитории
             является
             четким доказательством простого факта: разбавленное
             изрядной долей эмпатии, рациональное мышление позволяет оценить значение модели развития. Таким
@@ -324,10 +345,10 @@
             консультация с
             широким активом обеспечивает широкому кругу (специалистов) участие в формировании стандартных
             подходов.</span>
-        </div>
-      </div>
-    </footer>
-  </main>
+                </div>
+            </div>
+        </footer>
+    </main>
 </body>
 
 </html>

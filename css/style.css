@@ -1,6 +1,8 @@
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: 'montserrat';
 }
+
 :root {
     --site-widht: 1920px;
     --orange: #FF9900;
@@ -10,7 +12,9 @@
     --light-gray: #CACACA;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 
@@ -34,7 +38,6 @@ html {
 }
 
 body {
-    background: #E5E5E5;
     z-index: -1;
 }
 
@@ -72,7 +75,7 @@ body {
 
 .nav__list {
     margin-top: 5px;
-  }
+}
 
 .header__left {
     display: flex;
@@ -111,14 +114,50 @@ body {
     padding: 0 75px;
 }
 
-.slide {
+.swiper-container {
     margin-bottom: 102px;
-    padding: 103px 78px 91px;
-    position: relative;
-    background-image: url(/img/1920/low.jpg);
+    height: 620px;
+}
+
+.swiper-container-3d {
+    perspective: 829px;
+}
+
+.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin-bottom: 30px;
+    margin-left: 20px;
+    width: 30px;
+    height: 30px;
+    background: var(--white);
+    z-index: 2;
+}
+
+.slide {
+    background-image: url(/img/slide/low.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+}
+
+.slide-1 {
+    background-image: url(/img/slide/brown.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slide-2 {
+    background-image: url(/img/slide/apartment.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.slide-text {
+    padding: 103px 78px 0px;
+    position: absolute;
+    top: 100px;
+    z-index: 1;
 }
 
 .header__slide {
@@ -176,7 +215,6 @@ body {
 .about-us-block {
     display: flex;
     justify-content: space-between;
-
 }
 
 .about-us__col {
@@ -190,9 +228,11 @@ body {
     background-size: cover;
     background-position: 50% 50%;
 }
+
 .about-us__left__bottom-esm {
     display: none;
 }
+
 .about-us__left__bottom {
     display: flex;
     justify-content: space-between;
@@ -239,7 +279,6 @@ body {
     background-repeat: no-repeat;
     border: 1px solid var(--light-gray);
 }
-
 
 .right-blocks__text {
     line-height: 32px;
@@ -303,7 +342,6 @@ body {
     letter-spacing: -0.11px;
 }
 
-
 .consult-block__text {
     padding-bottom: 60px;
     max-width: 90%;
@@ -311,7 +349,7 @@ body {
 }
 
 .consult-img_sm {
-    display: none; 
+    display: none;
 }
 
 .consult-slide {
@@ -321,12 +359,15 @@ body {
     background-size: cover;
     background-position: center;
     align-self: stretch;
-  }
+}
 
 .consult-img {
     width: 100%;
     height: 100%;
 }
+
+
+/* Faq list */
 
 .faq {
     margin-bottom: 100px;
@@ -357,9 +398,43 @@ body {
     border-top: 1px solid var(--light-gray);
 }
 
+
+/* Preset accordion */
+
+.ui-state-default {
+    border: inherit;
+    border-bottom: 1px solid var(--light-gray);
+    background: inherit;
+    color: inherit;
+}
+
+.ui-accordion .ui-accordion-header {
+    display: flex;
+    margin: inherit;
+    padding: inherit;
+}
+
+.ui-accordion .ui-accordion-content {
+    padding-left: 0;
+}
+
+.question__header {
+    font-size: 24px;
+}
+
 .cross {
     margin-left: auto;
 }
+
+.answer {
+    max-width: 1003px;
+    padding-left: 0px;
+    background-color: var(--light-gray);
+    color: var(--gray);
+}
+
+
+/* Footer */
 
 .footer {
     background: #222222;
@@ -381,7 +456,7 @@ body {
 }
 
 .footer-social-esm {
-     display: none;
+    display: none;
 }
 
 .footer-nav {
@@ -412,7 +487,6 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-
 }
 
 .footer__center {
@@ -430,14 +504,14 @@ body {
 
 .footer__center form {
     padding-left: 6px;
-
 }
 
 textarea {
     resize: none;
 }
 
-#name, #e-mail {
+#name,
+#e-mail {
     width: 100%;
     height: 60px;
     margin-bottom: 25px;
@@ -457,7 +531,9 @@ textarea {
     letter-spacing: 0.08px;
 }
 
-#name, #e-mail, #request {
+#name,
+#e-mail,
+#request {
     background: #414141;
     color: white;
 }
@@ -516,7 +592,9 @@ textarea {
     letter-spacing: -0.08px;
 }
 
+
 /* Button */
+
 .btn_orange {
     color: var(--white);
     background: var(--orange);
@@ -576,14 +654,18 @@ textarea {
     left: calc(50% - 42px);
 }
 
-.bullet1, .bullet2, .bullet3 {
+.bullet1,
+.bullet2,
+.bullet3 {
     width: 15px;
     height: 15px;
     border-radius: 50%;
     background: rgba(255, 255, 255, 0.4);
 }
 
+
 /* Hover */
+
 .nav__link:hover {
     text-decoration: underline var(--orange);
     transition-duration: 0.3s;
@@ -600,7 +682,9 @@ textarea {
     transition-duration: 0.3s;
 }
 
-.btn-slide:hover, .btn-offer:hover, .btn-request:hover {
+.btn-slide:hover,
+.btn-offer:hover,
+.btn-request:hover {
     background: rgba(255, 153, 0, 0.6);
     transition-duration: 0.3s;
 }
@@ -624,11 +708,6 @@ textarea {
     color: var(--orange);
     cursor: pointer;
     transition-duration: 0.3s;
-
-}
-
-.bullet1:hover, .bullet2:hover, .bullet3:hover {
-    background: var(--white);
 }
 
 .cross:hover {
@@ -642,24 +721,27 @@ textarea {
     transition-duration: 0.3s;
 }
 
-.nav-toggle:hover {
+.nav-toggle-active {
     background-image: url(/img/Burger_hover.png);
     transition-duration: 0.3s;
 }
 
-:focus {
+
+/* :focus {
     outline:3px solid blue; outline-offset:2px;
-}
+} */
 
 a:active {
-    outline:3px solid rgb(255, 153, 0); outline-offset:2px;
+    outline: 3px solid rgb(255, 153, 0);
+    outline-offset: 2px;
 }
 
+
 /* Шрифты */
+
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Black.woff2') format('woff2'),
-        url('/fonts/Montserrat-Black.woff') format('woff');
+    src: url('/fonts/Montserrat-Black.woff2') format('woff2'), url('/fonts/Montserrat-Black.woff') format('woff');
     font-weight: 900;
     font-style: normal;
     font-display: swap;
@@ -667,8 +749,7 @@ a:active {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'),
-        url('/fonts/Montserrat-SemiBold.woff') format('woff');
+    src: url('/fonts/Montserrat-SemiBold.woff2') format('woff2'), url('/fonts/Montserrat-SemiBold.woff') format('woff');
     font-weight: 600;
     font-style: normal;
     font-display: swap;
@@ -676,8 +757,7 @@ a:active {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'),
-        url('/fonts/Montserrat-ExtraBold.woff') format('woff');
+    src: url('/fonts/Montserrat-ExtraBold.woff2') format('woff2'), url('/fonts/Montserrat-ExtraBold.woff') format('woff');
     font-weight: 800;
     font-style: normal;
     font-display: swap;
@@ -685,8 +765,7 @@ a:active {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Bold.woff2') format('woff2'),
-        url('/fonts/Montserrat-Bold.woff') format('woff');
+    src: url('/fonts/Montserrat-Bold.woff2') format('woff2'), url('/fonts/Montserrat-Bold.woff') format('woff');
     font-weight: 700;
     font-style: normal;
     font-display: swap;
@@ -694,8 +773,7 @@ a:active {
 
 @font-face {
     font-family: 'Montserrat';
-    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'),
-        url('/fonts/Montserrat-Regular.woff') format('woff');
+    src: url('/fonts/Montserrat-Regular.woff2') format('woff2'), url('/fonts/Montserrat-Regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
